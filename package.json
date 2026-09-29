@@ -6,7 +6,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "build": "node scripts/build.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -25,6 +25,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@docusaurus/faster": "^3.10.2",
     "@docusaurus/module-type-aliases": "3.10.2",
     "@docusaurus/tsconfig": "3.10.2",
     "@docusaurus/types": "3.10.2",
@@ -46,5 +47,9 @@
   "engines": {
     "node": ">=22.0.0",
     "npm": ">=11.0.0"
+  },
+  "allowScripts": {
+    "core-js@3.50.0": true,
+    "@swc/core@1.16.12": true
   }
 }

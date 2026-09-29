@@ -124,6 +124,9 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    future: {
+      v4: true, // Enable future changes for Docusaurus v4
+    }
   } satisfies Preset.ThemeConfig,
 };
 
